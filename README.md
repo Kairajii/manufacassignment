@@ -47,24 +47,27 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Calculating Mean, Mode, and Median
+This project includes functionality to calculate the mean, mode, and median of the "Flavanoids" property for the entire dataset, as well as the "Gamma" property created for each data point. These calculations are done class-wise based on the "Alcohol" property.
 
-### Analyzing the Bundle Size
+Mean: The mean is calculated as the average value of the property for each class.
+Median: The median is the middle value of the property when the data is sorted in ascending order.
+Mode: The mode is the most frequently occurring value of the property in each class.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Using Mantine Table Component
+The project also includes a React component called GammaTable that displays the calculated mean, median, and mode for the "Gamma" property in a tabular format using Mantine's Table component.
+The project also includes a React component called FlavanoidsTable that displays the calculated mean, median, and mode for the "Flavanoids" property in a tabular format using Mantine's Table component.
 
-### Making a Progressive Web App
+The table is styled to have proper borders and alignment, making it easy to read and understand the statistics for each class.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Styling with Tailwind CSS
+This project utilizes Tailwind CSS for styling the components and UI elements. Tailwind CSS is a utility-first CSS framework that provides a wide range of pre-built classes for quickly styling elements.
 
-### Advanced Configuration
+### Custom Styles
+The table in this project is styled using Tailwind CSS classes to achieve a clean and modern look. Some of the key styles applied include:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Border: Borders are added to the table and table cells using Tailwind's border utilities (border, border-solid, border-gray-300).
+Padding: Padding is applied to the table cells (p-4) to provide spacing between the content and the cell edges.
+Text Alignment: Text alignment is set to center for the table headers (text-center) to improve readability.
+Integration with React Components
+Tailwind CSS classes are used directly within React components to style elements. For example, the Table component from the Mantine UI library is styled using Tailwind CSS classes to customize its appearance.
