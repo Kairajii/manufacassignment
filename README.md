@@ -6,6 +6,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### Prerequisites
+Make sure you have Node.js and Yarn installed on your machine.
+
+### Installation
+Clone the repository
+git clone (https://github.com/Kairajii/manufacassignment.git)
+
+Navigate into the project directory
+cd your-repo
+
+Install dependencies
+yarn install
+
 ### `yarn start`
 
 Runs the app in the development mode.\
