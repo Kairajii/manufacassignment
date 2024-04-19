@@ -47,24 +47,15 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Calculating Mean, Mode, and Median
+This project includes functionality to calculate the mean, mode, and median of the "Flavanoids" property for the entire dataset, as well as the "Gamma" property created for each data point. These calculations are done class-wise based on the "Alcohol" property.
 
-### Analyzing the Bundle Size
+Mean: The mean is calculated as the average value of the property for each class.
+Median: The median is the middle value of the property when the data is sorted in ascending order.
+Mode: The mode is the most frequently occurring value of the property in each class.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Using Mantine Table Component
+The project also includes a React component called GammaTable that displays the calculated mean, median, and mode for the "Gamma" property in a tabular format using Mantine's Table component.
+The project also includes a React component called FlavanoidsTable that displays the calculated mean, median, and mode for the "Flavanoids" property in a tabular format using Mantine's Table component.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The table is styled to have proper borders and alignment, making it easy to read and understand the statistics for each class.
