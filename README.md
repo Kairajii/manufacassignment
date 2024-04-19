@@ -59,3 +59,15 @@ The project also includes a React component called GammaTable that displays the 
 The project also includes a React component called FlavanoidsTable that displays the calculated mean, median, and mode for the "Flavanoids" property in a tabular format using Mantine's Table component.
 
 The table is styled to have proper borders and alignment, making it easy to read and understand the statistics for each class.
+
+### Styling with Tailwind CSS
+This project utilizes Tailwind CSS for styling the components and UI elements. Tailwind CSS is a utility-first CSS framework that provides a wide range of pre-built classes for quickly styling elements.
+
+### Custom Styles
+The table in this project is styled using Tailwind CSS classes to achieve a clean and modern look. Some of the key styles applied include:
+
+Border: Borders are added to the table and table cells using Tailwind's border utilities (border, border-solid, border-gray-300).
+Padding: Padding is applied to the table cells (p-4) to provide spacing between the content and the cell edges.
+Text Alignment: Text alignment is set to center for the table headers (text-center) to improve readability.
+Integration with React Components
+Tailwind CSS classes are used directly within React components to style elements. For example, the Table component from the Mantine UI library is styled using Tailwind CSS classes to customize its appearance.
