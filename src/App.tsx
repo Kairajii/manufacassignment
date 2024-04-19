@@ -3,20 +3,21 @@ import data from './DummyData/wine-data';
 import FlavanoidsTable from './Components/FlavanoidsTable';
 import GammaTable from './Components/GammaTable';
 import { calculateMean,calculateMedian,calculateMode } from './utils/calculate';
+import React from 'react';
 
 
 
 // Calculate class-wise mean, median, and mode of Flavanoids
- function calculateFlavanoidsStats(data) {
-  const stats = {};
-  data.forEach(item => {
+ function calculateFlavanoidsStats(data:any) {
+  const stats:any = {};
+  data.forEach((item:any) => {
     if (!stats[item.Alcohol]) {
       stats[item.Alcohol] = [];
     }
     stats[item.Alcohol].push(item.Flavanoids);
   });
 
-  const result = {};
+  const result:any = {};
   Object.keys(stats).forEach(alcoholClass => {
     result[alcoholClass] = {
       mean: calculateMean(stats[alcoholClass]),
@@ -29,22 +30,22 @@ import { calculateMean,calculateMedian,calculateMode } from './utils/calculate';
 }
 
 // Calculate Gamma for each point in the data
-data.forEach(item => {
+data.forEach((item:any) => {
   item.Gamma = (item.Ash * item.Hue) / item.Magnesium;
 });
 
 
 // Calculate class-wise mean, median, and mode of Gamma
-function calculateGammaStats(data) {
-  const stats = {};
-  data.forEach(item => {
+function calculateGammaStats(data:any) {
+  const stats:any = {};
+  data.forEach((item:any) => {
     if (!stats[item.Alcohol]) {
       stats[item.Alcohol] = [];
     }
     stats[item.Alcohol].push(item.Gamma);
   });
 
-  const result = {};
+  const result:any = {};
   Object.keys(stats).forEach(alcoholClass => {
     result[alcoholClass] = {
       mean: calculateMean(stats[alcoholClass]),
@@ -56,7 +57,7 @@ function calculateGammaStats(data) {
   return result;
 }
 
-function App() {
+const App=()=> {
   const flavanoidsStats = calculateFlavanoidsStats(data);
   const gammaStats = calculateGammaStats(data);
   return (
